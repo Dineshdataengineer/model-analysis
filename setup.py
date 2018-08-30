@@ -242,18 +242,19 @@ setup_args = {
         'tensorflow_model_analysis/static/index.js.map',
         'tensorflow_model_analysis/static/vulcanized_template.html',
     ]),],
-    'install_requires': [
-        'apache-beam[gcp]>=2.5,<3',
-        'grpc-google-iam-v1==0.11.1',
-        'numpy>=1.10,<2',
-        'jupyter>=1.0,<2',
-        'ipywidgets>=7.0,<8',
-        # TF now requires protobuf>=3.6.0.
-        'protobuf>=3.6.0,<4',
-        # For apitools.
-        'six>=1.9,<2',
-        'tensorflow-transform>=0.8,<1',
-    ],
+# Pre-installed in the container for speed.
+#     'install_requires': [
+#         'apache-beam[gcp]>=2.5,<3',
+#         'grpc-google-iam-v1==0.11.1',
+#         'numpy>=1.10,<2',
+#         'jupyter>=1.0,<2',
+#         'ipywidgets>=7.0,<8',
+#         # TF now requires protobuf>=3.6.0.
+#         'protobuf>=3.6.0,<4',
+#         # For apitools.
+#         'six>=1.9,<2',
+#         'tensorflow-transform>=0.8,<1',
+#     ],
     'python_requires':
         '>=2.7,<3',
     'packages':
